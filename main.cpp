@@ -17,12 +17,6 @@ public:
         A[1].x = 11; A[1].y = 10;
         A[2].x = 12; A[2].y = 10;
     }
-    void Ve(){
-        for (int i = 0; i < DoDai; i++){
-            gotoxy(A[i].x,A[i].y);
-            cout<<"X";
-        }
-    }
     void DiChuyen(int Huong){
         for (int i = DoDai-1; i>0;i--)
             A[i] = A[i-1];
@@ -31,6 +25,12 @@ public:
         if (Huong==2) A[0].x = A[0].x - 1;
         if (Huong==3) A[0].y = A[0].y - 1;
 
+    }
+    void Ve(){
+        for (int i = 0; i < DoDai; i++){
+            gotoxy(A[i].x,A[i].y);
+            cout<<"X";
+        }
     }
 };
 
