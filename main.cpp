@@ -32,6 +32,15 @@ public:
         if (Huong==3) A[0].y = A[0].y - 1;
 
     }
+
+    void VeKhung(){
+    for (int i = MINX ; i<=MAXX ; i++)
+        for (int j = MINX ; j<=MAXY ; j++)
+            if ((i==MINX) || (i==MAXX) || (j==MINY) || (j==MAXY)){
+            gotoxy(i,j);
+            printf("+");
+        }
+
 };
 
 int main()
@@ -49,6 +58,7 @@ int main()
             if (t=='x') Huong = 1;
         }
         system("cls");
+        VeKhung();
         r.Ve();
         r.DiChuyen(Huong);
         Sleep(300);
