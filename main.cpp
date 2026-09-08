@@ -2,6 +2,10 @@
 #include <windows.h>
 #include <cstdlib>
 #include <conio.h>
+#define MINX 2
+#define MINY 2
+#define MAXX 35
+#define MAXY 20
 using namespace std;
 void gotoxy( int column, int line );
 struct Point{
